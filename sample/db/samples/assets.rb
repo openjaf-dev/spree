@@ -1,8 +1,8 @@
-Spree::Sample.load_sample("products")
-Spree::Sample.load_sample("variants")
+#Spree::Sample.load_sample("products")
+#Spree::Sample.load_sample("variants")
 
 products = {}
-products[:ror_baseball_jersey] = Spree::Product.find_by_name!("Ruby on Rails Baseball Jersey") 
+products[:ror_baseball_jersey] = Spree::Product.find_by_name!("Ruby on Rails Baseball Jersey")
 products[:ror_tote] = Spree::Product.find_by_name!("Ruby on Rails Tote")
 products[:ror_bag] = Spree::Product.find_by_name!("Ruby on Rails Bag")
 products[:ror_jr_spaghetti] = Spree::Product.find_by_name!("Ruby on Rails Jr. Spaghetti")
@@ -33,7 +33,7 @@ images = {
       :attachment => image("ror_tote")
     },
     {
-      :attachment => image("ror_tote_back") 
+      :attachment => image("ror_tote_back")
     }
   ],
   products[:ror_bag].master => [
@@ -98,7 +98,7 @@ images = {
       :attachment => image("spree_tote_front")
     },
     {
-      :attachment => image("spree_tote_back") 
+      :attachment => image("spree_tote_back")
     }
   ],
   products[:spree_ringer].master => [
@@ -106,7 +106,7 @@ images = {
       :attachment => image("spree_ringer_t")
     },
     {
-      :attachment => image("spree_ringer_t_back") 
+      :attachment => image("spree_ringer_t_back")
     }
   ],
   products[:spree_jr_spaghetti].master => [
@@ -119,7 +119,7 @@ images = {
       :attachment => image("spree_jersey")
     },
     {
-      :attachment => image("spree_jersey_back") 
+      :attachment => image("spree_jersey_back")
     }
   ],
   products[:spree_stein].master => [
@@ -127,7 +127,7 @@ images = {
       :attachment => image("spree_stein")
     },
     {
-      :attachment => image("spree_stein_back") 
+      :attachment => image("spree_stein_back")
     }
   ],
   products[:spree_mug].master => [
@@ -135,7 +135,7 @@ images = {
       :attachment => image("spree_mug")
     },
     {
-      :attachment => image("spree_mug_back") 
+      :attachment => image("spree_mug_back")
     }
   ],
 }

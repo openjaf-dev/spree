@@ -10,7 +10,7 @@ module Spree
       end
       # Check to see if the specified file has been loaded before
       if !$LOADED_FEATURES.include?(path)
-        require path
+        load path
         puts "Loaded #{file.titleize} samples"
       end
     end
