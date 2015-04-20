@@ -1,5 +1,5 @@
-eu_vat = Spree::Zone.where(name: "EU_VAT", description: "Countries that make up the EU VAT zone.").first_or_create
-north_america = Spree::Zone.where(name: "North America", description: "USA + Canada").first_or_create
+eu_vat = Spree::Zone.create!(name: "EU_VAT", description: "Countries that make up the EU VAT zone.")
+north_america = Spree::Zone.create!(name: "North America", description: "USA + Canada")
 
 ["Poland", "Finland", "Portugal", "Romania", "Germany", "France",
  "Slovakia", "Hungary", "Slovenia", "Ireland", "Austria", "Spain",
